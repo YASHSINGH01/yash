@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+
+var car = 0;
+var car1 = 0;
+function camaro()
+{
+car= car +1;
+document.getElementById('car').innerHTML = car;
+}
+
+function camaro1()
+{
+car1= car1 +1;
+document.getElementById('car1').innerHTML = car1;
+}
+
+
+</script>
+
+<style>
+body {
+	margin:25px;
+	align:center;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  
+}
+.button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<center><h2>VOTING </h2>
+<div class="row">
+  <div class="column">
+    <img src="D:\battlefield.jpg" height="250" width="300">
+</div>
+  <div class="column">
+    <img src="D:\baby-groot-dance.jpg" height="300" width="400" >
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+   <div id="car">  <p>    0  </p></div>
+    <input type="button" onclick="camaro();"  class="button" value="vote">
+  </div>
+  <div class="column">
+  <div id="car1">  <p>    0  </p></div>
+    <input type="button" onclick="camaro1();"  class="button" value="vote">
+  </div>
+</div>
+</center>
+
+
+</body>
+</html>
